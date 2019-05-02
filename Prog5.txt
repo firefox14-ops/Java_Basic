@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Prog5 {
+public static void main(String args[]) {
+//Scanner is a class and creating an object named input as an object for this class...
+Scanner input=new Scanner(System.in);
+int x=input.nextInt();
+System.out.println("value of x is: "+ x);
+}
+}
+
+

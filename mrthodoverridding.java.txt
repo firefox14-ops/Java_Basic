@@ -1,0 +1,96 @@
+import java.sql.*;
+import java.util.Scanner;
+class Farm_Problem{
+	public void check()
+      {
+Scanner input = new Scanner(System.in); 	
+System.out.println(" SYMPTOMS LIST ");
+	System.out.println(" 1. Leaf Rust  2. Stem rust  3. Sclerotinia 4. Damping off of seeding ");
+        System.out.println( " Choose the symptoms ");
+        int choice = input.nextInt();
+        Switch(choice){
+case 1 : 
+System.out.println(" The PROBLEM Is COMMON LEAF RUST IN CORN ");
+break;
+case 2: 
+System.out.println(" The PROBLEM Is WHEAT STEM RUST ");
+break;
+case 3:
+System.out.println(" The PROBLEM Is WHITE MOLD ");
+break;
+case 4:
+System.out.println(" The PROBLEM Is PHYTOPHTHORA");
+break;
+default: 
+System.out.println(" No Problem Symptom is selected ");
+}
+
+}
+
+class Farm_Solution extends Farm_Problem{
+public int water_level()
+{
+ System.out.println(" How many achres land u have ? ");
+ int level = input.nextInt();
+ System.out.println( " Do you have enough water supply ? ");
+ String conf = input.nextString();
+ if ( conf == 'y' 
+public void check()
+      {
+Scanner input = new Scanner(System.in); 	
+System.out.println(" SYMPTOMS SOLUTION LIST ");
+	System.out.println(" 1. Leaf Rust  2. Stem rust  3. Sclerotinia 4. Damping off of seeding ");
+        System.out.println( " Choose the symptoms for which u require solution ");
+        int choice = input.nextInt();
+        Switch(choice){
+case 1 : 
+System.out.println(" The Solution Is CHECK WATER FACILITY ");
+break;
+case 2: 
+System.out.println(" The Solution Is DORMANT SPRAY  ");
+break;
+case 3:
+System.out.println(" The Solution Is PRUNE OUT DEAD TWIGS AND CANKERS ");
+break;
+case 4:
+System.out.println(" The Solution Is AMMONIA SPRAY ");
+break;
+default: 
+System.out.println(" No Problem in ur FARM ");
+}
+
+}
+
+public static void main (String args[]) throws Exception
+{
+
+static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+static final String DB_URL = "jdbc:mysql://localhost:3307/university";
+static final String USER = "root";
+static final String PASS = "qazwsxedc"; 
+String query = "select * from client_master14 where NAME like '%s";
+
+Class.forName(JDBC_DRIVER);
+  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/university", "root", "qazwsxedc");
+  	
+Statement st = con.createStatement();
+ResultSet rs = st.executeQuery(query);
+rs.next();
+int price = rs.getInt("BALDUE");
+System.out.println(price);
+Farm_Problem obj1 = new Farm_Problem();
+Farm_Solution obj2= new Farm_Solution();
+System.out.println(" MENU ");
+	System.out.println(" 1. PROBLEM  2. SOLUTION  ");
+        System.out.println( " Choose the option ");
+        int choice = input.nextInt();
+        Switch(choice){
+case 1 : 
+obj1.check();
+break;
+case 2: 
+obj2.check();
+break;
+default: 
+System.out.println(" Invalid option ");
+}
