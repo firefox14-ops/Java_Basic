@@ -10,9 +10,9 @@ int fact_id_networking = 111;
 
 public void java(){
 System.out.println("");
- System.out.println(" SCS record  ");
- System.out.println(" I am a JAVA teacher  ");
- System.out.println( " My name is " +java);
+ System.out.print(" SCS record \n ");
+ System.out.print(" I am a JAVA teacher  \n");
+ System.out.print( " My name is \n " +java);
 }
 public void sepm(){
 System.out.println("");
@@ -32,7 +32,7 @@ class Systemetics extends SCS{
 
 public void java(){
 System.out.println("");
-        System.out.println(" Systemetics...  ");
+        System.out.print(" Systemetics...  \n");
 	System.out.println(" My faculty_ID is " +super.fact_id_java);
 	super.java();
 	System.out.println("");
